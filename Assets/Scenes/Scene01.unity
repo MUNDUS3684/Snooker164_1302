@@ -391,8 +391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
+  point: 7
   color: 0
-  point: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,8 +1203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
+  point: 5
   color: 0
-  point: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,8 +1335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
+  point: 2
   color: 0
-  point: 0
 --- !u!1 &1033337067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,8 +1463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
+  point: 4
   color: 0
-  point: 0
 --- !u!1001 &1357332611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1546,8 +1546,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
+  point: 6
   color: 0
-  point: 0
 --- !u!1 &1414404191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,8 +1741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
+  point: 3
   color: 0
-  point: 0
 --- !u!1 &1701067659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,8 +1862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
+  point: 1
   color: 0
-  point: 0
 --- !u!1 &1795875395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,8 +2058,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
-  color: 0
   point: 0
+  color: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
