@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8415800270336027861}
   - component: {fileID: 8626690145240373286}
   - component: {fileID: 4103888525675416145}
+  - component: {fileID: 4188368718635632892}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -68,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 3805ac4ef9be8774aa5d7c0ec6484b98, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,3 +141,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4188368718635632892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439660013228187279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b637847a406d18a42911b6216da699e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ball
+  color: 0
+  point: 0
+  materials:
+  - {fileID: 2100000, guid: 3805ac4ef9be8774aa5d7c0ec6484b98, type: 2}
+  - {fileID: 2100000, guid: 6d09f904ac451ed40b6f0a66bb70ebed, type: 2}
+  - {fileID: 2100000, guid: 02cde9965ee5a37448cc0f246787ec70, type: 2}
+  - {fileID: 2100000, guid: 5116f64c677669740b12d87c019dae68, type: 2}
+  - {fileID: 2100000, guid: a040241266189134e9976a233b52cd02, type: 2}
+  - {fileID: 2100000, guid: 91ea03edb8ab57641aebbe2fbdca66c7, type: 2}
+  - {fileID: 2100000, guid: fb0318b72ceb90245a92dad4355ece11, type: 2}
+  - {fileID: 2100000, guid: 97ea80c5f16473b48bb6efa76cb2f7a7, type: 2}

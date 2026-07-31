@@ -1,9 +1,9 @@
-using Unity.VisualScripting;
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public enum BallColor
-{
+{ 
     White,
     Red,
     Yellow,
@@ -13,32 +13,30 @@ public enum BallColor
     Pink,
     Black
 }
-public class Ball : MonoBehaviour , IPointerClickHandler
+
+
+public class Ball : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] 
-    private int point=0;
+    [SerializeField] private BallColor color;
+    [SerializeField] private int point = 0;
 
-    [SerializeField]
-    private BallColor color;
 
-    [SerializeField]
-    private MeshRenderer rd;
+    [SerializeField] private Material[] materials = new Material[8];
+    private MeshRenderer meshRenderer;
 
-    [SerializeField]
-    private GameObject[] BallPosition;
-
-    public void  OnPointerClick(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log(point);
-        GameManager.instance.Playerscore += point;
+        GameManager.instance.PlayerScore += point;
         Destroy(gameObject);
     }
 
-    void Awake()
+    void OnValidate()
     {
-
+        meshRenderer = GetComponent<MeshRenderer>();
+        point = (int)color;
+        meshRenderer.material = materials[point];
     }
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,53 +48,11 @@ public class Ball : MonoBehaviour , IPointerClickHandler
     {
         
     }
-
-    public void SetColorAndPoint(BallColor col)
+    public void Color(BallColor ball)
     {
-        color = col;
-
-        switch (col)
-        {
-            case BallColor.White:
-                point = 0;
-                rd.material.color = Color.white;
-                break;
-
-            case BallColor.Red:
-                point = 1;
-                rd.material.color = Color.red;
-                break;
-
-            case BallColor.Yellow:
-                point = 2;
-                rd.material.color = Color.yellow;
-                break;
-
-            case BallColor.Green:
-                point = 3;
-                rd.material.color = Color.green;
-                break;
-
-            case BallColor.Brown:
-                point = 4;
-                rd.material.color = Color.brown;
-                break;
-
-            case BallColor.Blue:
-                point = 5;
-                rd.material.color = Color.blue;
-                break;
-
-            case BallColor.Pink:
-                point = 6;
-                rd.material.color = Color.pink;
-                break;
-
-            case BallColor.Black:
-                point = 7;
-                rd.material.color = Color.black;
-                break;
-        }
+        color = ball;
+        point = (int)color;
+        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer.material = materials[point];
     }
-
 }
