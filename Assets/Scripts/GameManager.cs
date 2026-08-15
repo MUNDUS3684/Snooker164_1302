@@ -57,8 +57,11 @@ public class GameManager : MonoBehaviour
         Ball b = obj.GetComponent<Ball>();
         b.Color(col);
 
-        // เก็บบอลไว้สำหรับยิง
-        currentBall = obj;
+        // เก็บเฉพาะลูกที่ 0 ไว้สำหรับยิง
+        if (i == 0)
+        {
+            currentBall = obj;
+        }
     }
 
     private void ShootBall()
