@@ -199,6 +199,11 @@ public class GameManager : MonoBehaviour
         SpawnBalls();
         ResetCueBall();
 
+        if (ballLine != null)
+        {
+            ballLine.SetActive(true);
+        }
+
         PlayerPrefs.DeleteKey("HasSaveGame");
         PlayerPrefs.Save();
     }
@@ -513,6 +518,13 @@ public class GameManager : MonoBehaviour
             ballLine.SetActive(false);
         }
 
+        ResetCueBall();
+
+        if (ballLine != null)
+        {
+            ballLine.SetActive(false);
+        }
+
         if (gameOverScore != null)
         {
             gameOverScore.text =
@@ -621,7 +633,7 @@ public class GameManager : MonoBehaviour
                 ballRb.angularVelocity = Vector3.zero;
             }
 
-          string key = "BallPos_" + ball.Color;
+            string key = "BallPos_" + ball.Color;
 
             PlayerPrefs.SetFloat(
                 key + "_X",
@@ -837,10 +849,5 @@ public class GameManager : MonoBehaviour
         Physics.SyncTransforms();
 
         CameraBehindBall();
-
-        if (ballLine != null)
-        {
-            ballLine.SetActive(true);
-        }
     }
 }
